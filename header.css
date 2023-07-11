@@ -1,0 +1,87 @@
+header{
+    height: 100vh;
+    padding: 7rem;
+    overflow: hidden;
+
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* cta to give the gap in the buttons */
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content:center;
+
+}
+
+/* now socials to put them in side*/
+.header__social{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:0.8rem;
+   position:absolute;
+   bottom: 3rem;
+   left: 0;
+
+
+}
+.header__social::after{
+    content: "";
+    background-color: var(--color-primary);
+    width: 1px;
+    height: 2rem;
+
+}
+/* now for the image*/
+.yash{
+background:linear-gradient(var(--color-primary),transparent);
+
+width: 25rem;
+height: 30rem;
+position: absolute;
+left: calc(44% - 11rem);
+margin-top: 4rem;
+border-radius:12rem 12rem 0 0;
+pad: 5rem 1.5rem 1.5rem 1.5rem;
+overflow: hidden;
+
+}
+/* now for scrolldowne*/
+
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight:300;
+    font-size: 0.9rem;
+}
+
+/* media queries for scroll*/
+
+@media screen and (max-width:1024px) {
+    header{
+     height:100vh;
+    }
+    .header__social,
+    .scroll__down {
+        display: none;
+    }
+}
+@media  screen and (max-width:600px) {
+
+    .yash{
+        display: none;
+    }
+    
+
+    
+}
+
